@@ -2,7 +2,7 @@ import os
 from hashlib import md5
 
 
-def main(dir_root=r'D:\work\360\xgt\24款衣帽间装修效果图'):
+def main(dir_root="D:\work\images"):
     dirs = os.listdir(dir_root)
 
     for temp in dirs:
@@ -15,7 +15,7 @@ def main(dir_root=r'D:\work\360\xgt\24款衣帽间装修效果图'):
             print("new: ", path_new)
             os.rename(original_dir, path_new)
         else:
-            print("这是一个目录：", original_dir)
+            print(">>> This is a directory: ", original_dir)
 
 
 def get_file_md5(filename):
